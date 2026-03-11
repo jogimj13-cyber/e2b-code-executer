@@ -1,4 +1,4 @@
-"""E2B Code Sandbox with GPT-5.1-Codex-Mini/Mercury Coder/Qwen 3 Coder"""
+"""E2B Code Sandbox with Mercury Coder"""
 # Imports
 from langchain_openai import ChatOpenAI
 from langchain.tools import tool
@@ -26,7 +26,7 @@ load_dotenv()
 model = ChatOpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
-    model="gpt-5.1-codex-mini" # Change to gpt-5.1-codex-mini
+    model="gpt-5.1-codex-mini"
 )
 
 checkpointer = InMemorySaver()
@@ -230,4 +230,5 @@ def ask():
         print(response['messages'][-1].text)
 
 if __name__ == "__main__":
+
     ask()
