@@ -122,7 +122,7 @@ def run_python_code(code: str):
 
     return "\n".join(output) if output else "Code executed but no output was returned"
 
-# Prompt - warning it's HUGE
+# Prompt
 CODE_EXECUTION_PROMPT = """You are a data analysis assistant. You MUST use the available tools to complete tasks.
 
 AVAILABLE TOOLS:
@@ -232,3 +232,4 @@ def ask():
 if __name__ == "__main__":
 
     ask()
+
