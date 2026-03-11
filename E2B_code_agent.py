@@ -48,15 +48,6 @@ def get_dataset_info(file_path):
     
     elif file_path.endswith == '.sql':
         df = pd.read_sql(file_path, nrows=3)
-
-    elif file_path.endswith == '.feather':
-        df = pd.read_feather(file_path, nrows=3)
-    
-    elif file_path.endswith == '.parquet':
-        df = pd.read_parquet(file_path, nrows=3)
-    
-    elif file_path.endswith == '.sas7bdat':
-        df = pd.read_sas(file_path, nrows=3)
     
     return f"Columns: {list(df.columns)}\nSample data:\n{df.to_string()}"
 
@@ -176,11 +167,11 @@ for sheet in excel_file.sheet_names:
     print(f"Shape: {df.shape}")
     print(f"Columns: {df.columns.tolist()}")
 ```
-For other files(SQL, feather, sas, etc):
+For SQL files:
 ```python
 import pandas as pd
-file = pd.read_filetype('/home/user/data/filename.filelanguage')
-print()
+file = pd.read_sql('/home/user/data/filename.sql')
+
 ```
 
 VISUALIZATION RULES:
@@ -238,5 +229,6 @@ def ask():
 if __name__ == "__main__":
 
     ask()
+
 
 
