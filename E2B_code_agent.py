@@ -176,6 +176,12 @@ for sheet in excel_file.sheet_names:
     print(f"Shape: {df.shape}")
     print(f"Columns: {df.columns.tolist()}")
 ```
+For other files(SQL, feather, sas, etc):
+```python
+import pandas as pd
+file = pd.read_filetype('/home/user/data/filename.filelanguage')
+print()
+```
 
 VISUALIZATION RULES:
 - Only create plots if user explicitly asks for: "plot", "chart", "graph", "visualize", "show", "draw"
@@ -232,4 +238,5 @@ def ask():
 if __name__ == "__main__":
 
     ask()
+
 
