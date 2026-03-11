@@ -7,29 +7,17 @@ Uses mercury-coder to safely run code to use for datasets.
    
   langchain_openai
   langchain.tools
-  
   langchain.agents
-  
   langchain.messages
-  
   langgraph.checkpoint.memory
-  
   e2b_code_interpreter
-  
   langchain.agents.middleware
-  
   sys
-  
   os
-  
   base64
-  
   pandas
-  
   dotenv
-  
   time
-  
   warnings
   
 4. 
