@@ -46,8 +46,6 @@ def get_dataset_info(file_path):
     elif file_path.endswith == '.json':
         df = pd.read_json(file_path, nrows=3)
     
-    elif file_path.endswith == '.sql':
-        df = pd.read_sql(file_path, nrows=3)
     
     return f"Columns: {list(df.columns)}\nSample data:\n{df.to_string()}"
 
@@ -229,6 +227,7 @@ def ask():
 if __name__ == "__main__":
 
     ask()
+
 
 
 
