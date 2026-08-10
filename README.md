@@ -1,5 +1,5 @@
-# E2B Code Executer Agent
-Uses mercury-coder to safely run code to use for datasets.
+# E2B Code Executor Agent
+Uses GPT 5.1 Codex Mini to safely run code to use for datasets.
 
 ## Requirements
 1. Need python installed
